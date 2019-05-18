@@ -28,6 +28,7 @@ export default class App extends Component {
                 <img src={profile} className='profile' />
                 <h1>Yo</h1>
                 <p>The name is X.</p>
+                {/* {this.state.displayBio ? <Title /> : null } */}
                 <Title />
                 <p>I'm always looking forward to tackle any challenge.</p>
                 {
