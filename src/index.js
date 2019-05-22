@@ -1,8 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
+import App from './components/App';
+import Jokes from './components/Jokes';
+import Header from './components/Header';
 import './index.css';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 
+const history = createBrowserHistory();
+
+ReactDOM.render(
+    <Router history={history}>
+        <Switch>
+            <Route exact={true} path='/' render={() => <Header><App /></Header>} />
+            <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
+        </Switch>
+    </Router>,
+    document.getElementById('root')
+);
+
+
+//Promises
+// new Promise((resolve, reject) => {
+//     return reject(new Error('No Bear'));
+
+//     setTimeout(() => {
+//         resolve('Bear, beets, battlestar');
+//     }, 2000);
+// })
+// .then(quote => {
+//     console.log(quote)
+// })
+// .catch(error => console.log('error', error));
