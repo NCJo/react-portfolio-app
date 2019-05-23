@@ -8,6 +8,8 @@ import Jokes from './components/Jokes';
 import Header from './components/Header';
 import './index.css';
 
+import MusicGuru from './projects/music-guru';
+
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -18,6 +20,7 @@ ReactDOM.render(
         <Switch>
             <Route exact={true} path='/' render={() => <Header><App /></Header>} />
             <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
+            <Route path='/music-guru' render={() => <Header><MusicGuru /></Header>} />
         </Switch>
     </Router>,
     document.getElementById('root')
