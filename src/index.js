@@ -9,6 +9,8 @@ import Header from './components/Header';
 import './index.css';
 
 import MusicGuru from './projects/music-guru';
+import EvensOrOdds from './projects/even-or-odds';
+import Reaction from './projects/reaction';
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -21,6 +23,8 @@ ReactDOM.render(
             <Route exact={true} path='/' render={() => <Header><App /></Header>} />
             <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
             <Route path='/music-guru' render={() => <Header><MusicGuru /></Header>} />
+            <Route path='/evens-or-odds' render={() => <Header><EvensOrOdds /></Header>} />
+            <Route path='/reaction' render={() => <Header><Reaction /></Header>} />
         </Switch>
     </Router>,
     document.getElementById('root')
