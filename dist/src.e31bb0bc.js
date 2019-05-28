@@ -29761,6 +29761,8 @@ module.exports = "/project1.0e13da1c.png";
 module.exports = "/project2.d48872d8.png";
 },{}],"assets/project3.png":[function(require,module,exports) {
 module.exports = "/project3.592b562e.png";
+},{}],"assets/project5.png":[function(require,module,exports) {
+module.exports = "/project5.368e91d9.png";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -29775,30 +29777,44 @@ var _project2 = _interopRequireDefault(require("../assets/project2.png"));
 
 var _project3 = _interopRequireDefault(require("../assets/project3.png"));
 
+var _project4 = _interopRequireDefault(require("../assets/project5.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PROJECTS = [{
   id: 1,
-  title: 'Example Django Applicaion',
-  description: 'A Django App that I built, involving JS and core web dev concepts.',
-  link: 'https://spiderinc.pythonanywhere.com',
+  title: 'Public Health Web App',
+  description: 'A web-based app to resolve the difficulty of workers in EMTs to purchase insurance due to high-risk working environment.',
+  link: 'https://www.volunteerbonus.com',
   image: _project.default
 }, {
   id: 2,
-  title: 'Example Microsoft Azure Chatbot Applicaion',
-  description: 'A chatbot that I am training it to be a QnA for customer service bot.',
+  title: 'Azure Chatbot App',
+  description: 'A chatbot that I am training it to be a QnA for customer service bot. Soon will be included in a webapp + mobile app.',
   link: 'https://spiderinc.pythonanywhere.com',
   image: _project2.default
 }, {
   id: 3,
-  title: 'X title',
-  description: 'Y description',
-  link: 'Z link',
+  title: 'Laramie Marketplace App',
+  description: 'Gitch.me app to be a central hub for matching service providers and customers in the community.',
+  link: 'https://github.com/TechTalkLaramie/marketplace',
   image: _project3.default
+}, {
+  id: 4,
+  title: 'Customized Web Crawler',
+  description: 'Developed a web crawler for an Investment Bank and was in part of a team that develops a model to predict the stock market price.',
+  link: 'https://github.com/NCJo/UA_scraper',
+  image: _project3.default
+}, {
+  id: 5,
+  title: 'PDC Construction Web App',
+  description: 'A Django Webapp for a construction company in Thailand',
+  link: 'https://github.com/NCJo/PDC-Construction-Webapp',
+  image: _project4.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png","../assets/project5.png":"assets/project5.png"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29839,7 +29855,11 @@ var Project = function Project(props) {
 };
 
 var Projects = function Projects() {
-  return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Highlighted Projects"), _react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
+  return _react.default.createElement("div", null, _react.default.createElement("h2", {
+    style: {
+      color: '#2374ab'
+    }
+  }, "Highlighted Projects"), _react.default.createElement("h6", null, "(Check out my React and Redux fun projects on the top links!)"), _react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
     return _react.default.createElement(Project, {
       key: PROJECT.id,
       project: PROJECT
@@ -29885,7 +29905,7 @@ var SOCIAL_PROFILES = [{
   image: _github_icon.default
 }, {
   id: 3,
-  link: 'https://www.linkedin.com',
+  link: 'https://www.linkedin.com/in/cjnimkulrat/',
   image: _linkedin_icon.default
 }, {
   id: 4,
@@ -30020,7 +30040,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var TITLES = ['a Software Engineer', 'a Music Lover', 'a Skateboarder', 'an Enthusiastic Learner'];
+var TITLES = ['a Software Engineer', 'a Full Stack Engineer', 'a Web Crawler Specialist', 'a Music Lover', 'an Enthusiastic Learner', 'a Copy Writer', 'a Photographer'];
 
 var Title =
 /*#__PURE__*/
@@ -30093,8 +30113,11 @@ function (_Component) {
       // const title = TITLES[this.state.titleIndex];
 
       var title = TITLES[titleIndex];
-      return _react.default.createElement("p", {
-        className: fadeIn ? "title-fade-in" : "title-fade-out"
+      return _react.default.createElement("h4", {
+        className: fadeIn ? "title-fade-in" : "title-fade-out",
+        style: {
+          color: '#ff8484'
+        }
       }, "I am ", title);
     }
   }]);
@@ -30185,9 +30208,11 @@ function (_Component) {
       return _react.default.createElement("div", null, _react.default.createElement("img", {
         src: _profile.default,
         className: "profile"
-      }), _react.default.createElement("h1", null, "Yo"), _react.default.createElement("p", null, "The name is X."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I'm always looking forward to tackle any challenge."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I live in NC."), _react.default.createElement("p", null, "My favorite language is Python, but ReactJS is also badass."), _react.default.createElement("p", null, "A skateboard Enthusiast."), _react.default.createElement("button", {
+      }), _react.default.createElement("h1", null, "Hi!"), _react.default.createElement("p", null, "I'm Jed \u2014 working remotely on projects for clients all over the world."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Express."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm a freelancer based in Cary and Denver."), _react.default.createElement("p", null, "Python is love, javascript is life."), _react.default.createElement("p", null, "A skateboard Enthusiast."), _react.default.createElement("button", {
+        class: "button",
         onClick: this.toggleDisplayBio
       }, "Show Less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
+        class: "button",
         onClick: this.toggleDisplayBio
       }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
     }
@@ -30366,7 +30391,7 @@ var Header = function Header(props) {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/jokes"
-  }, "Jokes")), _react.default.createElement("h3", {
+  }, "Tell Me a Joke")), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/music-guru"
@@ -30374,11 +30399,11 @@ var Header = function Header(props) {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/evens-or-odds"
-  }, "Evens or Odds")), _react.default.createElement("h3", {
+  }, "Even or Odds?")), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/reaction"
-  }, "Reaction"))), props.children);
+  }, "Reaction Chat"))), props.children);
 };
 
 var _default = Header;
@@ -33096,7 +33121,7 @@ var Instructions = function Instructions(props) {
       collapseInstructions = props.collapseInstructions;
 
   if (instructionsExpanded) {
-    return _react.default.createElement("div", null, _react.default.createElement("h3", null, "Instructions"), _react.default.createElement("p", null, "Welcome to evens or odds."), _react.default.createElement("p", null, "The deck is shuffled. You will predict whether the next card will be even or odd."), _react.default.createElement("p", null, "You will gain a point for every card you get right."), _react.default.createElement("p", null, "Face cards will be ommited."), _react.default.createElement("br", null), _react.default.createElement("button", {
+    return _react.default.createElement("div", null, _react.default.createElement("h3", null, "Instructions"), _react.default.createElement("p", null, "Welcome to evens or odds."), _react.default.createElement("p", null, "The deck is shuffled. You will predict whether the next card will be even or odd."), _react.default.createElement("p", null, "You will gain a point for every card you get right."), _react.default.createElement("p", null, "Face cards will be omited."), _react.default.createElement("br", null), _react.default.createElement("button", {
       onClick: collapseInstructions
     }, "Show less"));
   }
@@ -34790,7 +34815,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63616" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54581" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

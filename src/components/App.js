@@ -26,22 +26,28 @@ class App extends Component {
         return (
             <div>
                 <img src={profile} className='profile' />
-                <h1>Yo</h1>
-                <p>The name is X.</p>
+                <h1>Hi!</h1>
+                <p>I'm Jed — working remotely on projects for clients all over the world.</p>
                 {/* {this.state.displayBio ? <Title /> : null } */}
                 <Title />
-                <p>I'm always looking forward to tackle any challenge.</p>
+                <p>I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Express.</p>
                 {
                     this.state.displayBio ? (
                         <div>
-                            <p>I live in NC.</p>
-                            <p>My favorite language is Python, but ReactJS is also badass.</p>
+                            <p>I'm a freelancer based in Cary and Denver.</p>
+                            <p>Python is love, javascript is life.</p>
                             <p>A skateboard Enthusiast.</p>
-                            <button onClick={this.toggleDisplayBio}>Show Less</button>
+                            <button 
+                                class='button'
+                                onClick={this.toggleDisplayBio}>Show Less
+                            </button>
                         </div>
                     ) : (
                         <div>
-                            <button onClick={this.toggleDisplayBio}>Read More</button>
+                            <button 
+                                class='button'
+                                onClick={this.toggleDisplayBio}>Read More
+                            </button>
                         </div>
                     )
                 }

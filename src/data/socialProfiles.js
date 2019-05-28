@@ -16,7 +16,7 @@ const SOCIAL_PROFILES = [
     },
     {
         id: 3,
-        link: 'https://www.linkedin.com',
+        link: 'https://www.linkedin.com/in/cjnimkulrat/',
         image: linkedinIcon
     },
     {

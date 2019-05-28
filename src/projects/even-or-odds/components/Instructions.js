@@ -14,7 +14,7 @@ const Instructions = props => {
                 <p>Welcome to evens or odds.</p>
                 <p>The deck is shuffled. You will predict whether the next card will be even or odd.</p>
                 <p>You will gain a point for every card you get right.</p>
-                <p>Face cards will be ommited.</p>
+                <p>Face cards will be omited.</p>
                 <br/>
                 <button onClick={collapseInstructions}>Show less</button>
             </div>

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 
 const TITLES = [
     'a Software Engineer',
+    'a Full Stack Engineer',
+    'a Web Crawler Specialist',
     'a Music Lover',
-    'a Skateboarder',
-    'an Enthusiastic Learner'
+    'an Enthusiastic Learner',
+    'a Copy Writer',
+    'a Photographer',
 ];
 
 class Title extends Component {
@@ -42,7 +45,10 @@ class Title extends Component {
 
 
         return (
-            <p className={fadeIn ? "title-fade-in" : "title-fade-out"}>I am {title}</p>
+            <h4 
+            className={fadeIn ? "title-fade-in" : "title-fade-out"}
+            style={{color: '#ff8484'}}
+            >I am {title}</h4>
         )
     }
 }
