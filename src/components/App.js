@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
+import ChatBot from './ChatBot';
 
 import profile from '../assets/profile.png';
 
@@ -53,6 +54,8 @@ class App extends Component {
                 }
                 <hr />
                 <Projects />
+                <hr />
+                <ChatBot />
                 <hr />
                 <SocialProfiles />
                 

@@ -14,8 +14,8 @@ const PROJECTS = [
     {   
         id: 2,
         title: 'Azure Chatbot App',
-        description: 'A chatbot that I am training it to be a QnA for customer service bot. Soon will be included in a webapp + mobile app.',
-        link: 'https://spiderinc.pythonanywhere.com',
+        description: 'A chatbot that I am training it to be a QnA for customer service bot.',
+        link: 'https://github.com/NCJo/react-native-MS-chat-bot-api',
         image: project2
     },
     {

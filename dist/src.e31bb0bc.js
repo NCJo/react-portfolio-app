@@ -29790,8 +29790,8 @@ var PROJECTS = [{
 }, {
   id: 2,
   title: 'Azure Chatbot App',
-  description: 'A chatbot that I am training it to be a QnA for customer service bot. Soon will be included in a webapp + mobile app.',
-  link: 'https://spiderinc.pythonanywhere.com',
+  description: 'A chatbot that I am training it to be a QnA for customer service bot.',
+  link: 'https://github.com/NCJo/react-native-MS-chat-bot-api',
   image: _project2.default
 }, {
   id: 3,
@@ -30127,6 +30127,93 @@ function (_Component) {
 
 var _default = Title;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/ChatBot.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var ChatBot =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ChatBot, _Component);
+
+  function ChatBot() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, ChatBot);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ChatBot)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      displayChatBot: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "toggleChatBot", function () {
+      _this.setState({
+        displayChatBot: !_this.state.displayChatBot
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(ChatBot, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, this.state.displayChatBot ? _react.default.createElement("div", null, _react.default.createElement("iframe", {
+        src: "https://webchat.botframework.com/embed/greatestqnabot?s=ZFcnp4pxVZU.2HONQZZvxmaP8oPZ3FWyw5xbaWjy-EISkKCatHTbAfg",
+        style: {
+          width: '70%',
+          height: '500px'
+        }
+      }), _react.default.createElement("div", null, _react.default.createElement("button", {
+        class: "button",
+        onClick: this.toggleChatBot
+      }, "Close"))) : _react.default.createElement("div", null, _react.default.createElement("button", {
+        className: "button chat-button",
+        onClick: this.toggleChatBot
+      }, _react.default.createElement("strong", null, "Chat with Azure ChatBot!"))));
+    }
+  }]);
+
+  return ChatBot;
+}(_react.Component);
+
+var _default = ChatBot;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"assets/profile.png":[function(require,module,exports) {
 module.exports = "/profile.ae7bce2d.png";
 },{}],"components/App.js":[function(require,module,exports) {
@@ -30144,6 +30231,8 @@ var _Projects = _interopRequireDefault(require("./Projects"));
 var _SocialProfiles = _interopRequireDefault(require("./SocialProfiles"));
 
 var _Title = _interopRequireDefault(require("./Title"));
+
+var _ChatBot = _interopRequireDefault(require("./ChatBot"));
 
 var _profile = _interopRequireDefault(require("../assets/profile.png"));
 
@@ -30214,7 +30303,7 @@ function (_Component) {
       }, "Show Less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
         class: "button",
         onClick: this.toggleDisplayBio
-      }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
+      }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_ChatBot.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
     }
   }]);
 
@@ -30223,7 +30312,7 @@ function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects":"components/Projects.js","./SocialProfiles":"components/SocialProfiles.js","./Title":"components/Title.js","../assets/profile.png":"assets/profile.png"}],"components/Jokes.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Projects":"components/Projects.js","./SocialProfiles":"components/SocialProfiles.js","./Title":"components/Title.js","./ChatBot":"components/ChatBot.js","../assets/profile.png":"assets/profile.png"}],"components/Jokes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34815,7 +34904,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53741" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57100" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
