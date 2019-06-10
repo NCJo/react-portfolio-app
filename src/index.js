@@ -5,6 +5,7 @@ import { createBrowserHistory } from 'history';
 
 import App from './components/App';
 import Jokes from './components/Jokes';
+import Interview from './components/Interview';
 import Header from './components/Header';
 import './index.css';
 
@@ -25,6 +26,8 @@ ReactDOM.render(
             <Route path='/music-guru' render={() => <Header><MusicGuru /></Header>} />
             <Route path='/evens-or-odds' render={() => <Header><EvensOrOdds /></Header>} />
             <Route path='/reaction' render={() => <Header><Reaction /></Header>} />
+            <Route path='/interview' render={() => <Header><Interview /></Header>} />
+
         </Switch>
     </Router>,
     document.getElementById('root')
