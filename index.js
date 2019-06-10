@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`listening on the ${PORT}`));
 
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, '/src/index.html'), function(err) {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'), function(err) {
       if (err) {
         res.status(500).send(err)
       }
