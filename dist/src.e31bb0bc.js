@@ -34953,7 +34953,7 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
 }), _react.default.createElement(_reactRouterDom.Route, {
   path: "/interview",
   render: function render() {
-    return _react.default.createElement(_Header.default, null, _react.default.createElement(_Interview.default, null));
+    return _react.default.createElement(_Interview.default, null);
   }
 }))), document.getElementById('root')); //Promises
 // new Promise((resolve, reject) => {
@@ -34994,7 +34994,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64271" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49348" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -26,7 +26,9 @@ ReactDOM.render(
             <Route path='/music-guru' render={() => <Header><MusicGuru /></Header>} />
             <Route path='/evens-or-odds' render={() => <Header><EvensOrOdds /></Header>} />
             <Route path='/reaction' render={() => <Header><Reaction /></Header>} />
-            <Route path='/interview' render={() => <Header><Interview /></Header>} />
+            {/* <Route path='/interview' render={() => <Header><Interview /></Header>} /> */}
+            <Route path='/interview' render={() => <Interview />} />
+
 
         </Switch>
     </Router>,
