@@ -7,7 +7,7 @@ export default class Interview extends Component {
         
         return (
             <div>
-                <h2>I apologize for the video quality and a portrait mode.</h2>
+                <h2>I apologize for the video quality and the portrait mode.</h2>
                 <h3>Here is a doughnut. 🍩</h3>
                 <br/>
                 <hr/>
