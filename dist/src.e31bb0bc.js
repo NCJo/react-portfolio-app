@@ -30451,7 +30451,9 @@ function (_Component) {
 }(_react.Component);
 
 exports.default = Jokes;
-},{"react":"../node_modules/react/index.js"}],"components/Interview.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"assets/natural.png":[function(require,module,exports) {
+module.exports = "/natural.a46a5221.png";
+},{}],"components/Interview.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30460,6 +30462,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+var _natural = _interopRequireDefault(require("../assets/natural.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
@@ -30495,7 +30501,7 @@ function (_Component) {
   _createClass(Interview, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "I apologize for the video quality and a portrait mode."), _react.default.createElement("h3", null, "Here is a doughnut. \uD83C\uDF69"), _react.default.createElement("br", null), _react.default.createElement("hr", null), _react.default.createElement("h4", null, "Q1"), _react.default.createElement("h4", {
+      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "I apologize for the video quality and the portrait mode."), _react.default.createElement("h3", null, "Here is a doughnut. \uD83C\uDF69"), _react.default.createElement("br", null), _react.default.createElement("h4", null, "Q1"), _react.default.createElement("h4", {
         style: qStyle
       }, "Why do you want to work for Natural Habitat Adventures? What specifically interests you about this position and why do you want this job?"), _react.default.createElement("iframe", {
         width: "560",
@@ -30522,6 +30528,15 @@ function (_Component) {
         frameborder: "0",
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
         allowfullscreen: true
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h4", {
+        style: mockStyle
+      }, "Below is a sample re-design of the tour dates and pricing page from Natural Habitat Adventures website (Q3)"), _react.default.createElement("img", {
+        src: _natural.default,
+        alt: "sample",
+        style: {
+          width: 691,
+          height: 797
+        }
       }));
     }
   }]);
@@ -30534,7 +30549,11 @@ var qStyle = {
   fontStyle: "italic",
   color: "#DECCCC"
 };
-},{"react":"../node_modules/react/index.js"}],"components/Header.js":[function(require,module,exports) {
+var mockStyle = {
+  fontStyle: "bold",
+  color: "#DECCCC"
+};
+},{"react":"../node_modules/react/index.js","../assets/natural.png":"assets/natural.png"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34994,7 +35013,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49348" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59488" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
