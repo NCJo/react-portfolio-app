@@ -20,7 +20,7 @@ const Project = props => {
 const Projects = () => (
     <div>
         <h2 style={{ color: '#2374ab' }}>Highlighted Projects</h2>
-        <h6>(Check out my React and Redux fun projects on the top links!)</h6>
+        {/* <h6>(Check out my React and Redux fun projects on the top links!)</h6> */}
         <div>
             {
                 PROJECTS.map(PROJECT => (
