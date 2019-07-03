@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history';
 import App from './components/App';
 import Jokes from './components/Jokes';
 import Interview from './components/Interview';
+import Crometrics from './components/Crometrics';
 import Header from './components/Header';
 import './index.css';
 
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Route path='/reaction' render={() => <Header><Reaction /></Header>} />
             {/* <Route path='/interview' render={() => <Header><Interview /></Header>} /> */}
             <Route path='/interview' render={() => <Interview />} />
+            <Route path='/sample' render={() => <Crometrics />} />
 
 
         </Switch>
