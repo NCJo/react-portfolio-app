@@ -30553,7 +30553,9 @@ var mockStyle = {
   fontStyle: "bold",
   color: "#DECCCC"
 };
-},{"react":"../node_modules/react/index.js","../assets/natural.png":"assets/natural.png"}],"components/Crometrics.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/natural.png":"assets/natural.png"}],"assets/natural2.png":[function(require,module,exports) {
+module.exports = "/natural2.17143878.png";
+},{}],"components/Crometrics.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30563,7 +30565,7 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _natural = _interopRequireDefault(require("../assets/natural.png"));
+var _natural = _interopRequireDefault(require("../assets/natural2.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30601,7 +30603,7 @@ function (_Component) {
   _createClass(Crometrics, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Sample of the QA Report"), _react.default.createElement("h3", null, "Thank you for reading my job submission. Here is a doughnut. \uD83C\uDF69"), _react.default.createElement("h5", null, "Company Link: ", _react.default.createElement("a", {
+      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Sample of the QA Report"), _react.default.createElement("h3", null, "Hello CroMetrics! Thank you for checking out my job submission. Here is a doughnut. \uD83C\uDF69"), _react.default.createElement("h5", null, "Company Link: ", _react.default.createElement("a", {
         href: "https://www.nathab.com/"
       }, "https://www.nathab.com/")), _react.default.createElement("br", null), _react.default.createElement("hr", null), _react.default.createElement("img", {
         src: _natural.default,
@@ -30618,7 +30620,7 @@ function (_Component) {
 }(_react.Component);
 
 exports.default = Crometrics;
-},{"react":"../node_modules/react/index.js","../assets/natural.png":"assets/natural.png"}],"components/Header.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/natural2.png":"assets/natural2.png"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35077,7 +35079,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60049" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51931" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
