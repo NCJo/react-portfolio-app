@@ -30298,10 +30298,10 @@ function (_Component) {
         src: _profile.default,
         className: "profile"
       }), _react.default.createElement("h1", null, "Hi!"), _react.default.createElement("p", null, "I'm Jed \u2014 working remotely on projects for clients all over the world."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Express."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm a freelancer based in Cary and Denver."), _react.default.createElement("p", null, "Python is love, javascript is life."), _react.default.createElement("p", null, "A skateboard Enthusiast."), _react.default.createElement("button", {
-        class: "button",
+        class: "myButton",
         onClick: this.toggleDisplayBio
       }, "Show Less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
-        class: "button",
+        class: "myButton",
         onClick: this.toggleDisplayBio
       }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_ChatBot.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
     }
@@ -35079,7 +35079,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51931" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55680" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

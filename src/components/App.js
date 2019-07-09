@@ -39,14 +39,14 @@ class App extends Component {
                             <p>Python is love, javascript is life.</p>
                             <p>A skateboard Enthusiast.</p>
                             <button 
-                                class='button'
+                                class='myButton'
                                 onClick={this.toggleDisplayBio}>Show Less
                             </button>
                         </div>
                     ) : (
                         <div>
                             <button 
-                                class='button'
+                                class='myButton'
                                 onClick={this.toggleDisplayBio}>Read More
                             </button>
                         </div>
