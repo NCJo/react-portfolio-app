@@ -30658,7 +30658,199 @@ var Header = function Header(props) {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"assets/social_elephant.png":[function(require,module,exports) {
+module.exports = "/social_elephant.0f8597df.png";
+},{}],"assets/logoElephant.png":[function(require,module,exports) {
+module.exports = "/logoElephant.4761e9e8.png";
+},{}],"assets/elephant_banner.gif":[function(require,module,exports) {
+module.exports = "/elephant_banner.9a0863b8.gif";
+},{}],"assets/office.jpg":[function(require,module,exports) {
+module.exports = "/office.d0f5dcf6.jpg";
+},{}],"assets/colorelephant.png":[function(require,module,exports) {
+module.exports = "/colorelephant.46f3a8e8.png";
+},{}],"components/Elephant.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _social_elephant = _interopRequireDefault(require("../assets/social_elephant.png"));
+
+var _logoElephant = _interopRequireDefault(require("../assets/logoElephant.png"));
+
+var _elephant_banner = _interopRequireDefault(require("../assets/elephant_banner.gif"));
+
+var _office = _interopRequireDefault(require("../assets/office.jpg"));
+
+var _colorelephant = _interopRequireDefault(require("../assets/colorelephant.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Elephant =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Elephant, _Component);
+
+  function Elephant() {
+    _classCallCheck(this, Elephant);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Elephant).apply(this, arguments));
+  }
+
+  _createClass(Elephant, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Just like the website! (with a bit of tilt)"), _react.default.createElement("h5", null, "go ahead, click any link"), _react.default.createElement("div", {
+        className: "white-bg"
+      }, _react.default.createElement("div", {
+        className: "vertical-title"
+      }, _react.default.createElement("a", {
+        href: "https://colorelephant.com/"
+      }, _react.default.createElement("img", {
+        id: "logo-elephant",
+        src: _logoElephant.default,
+        alt: "logo"
+      })), _react.default.createElement("p", {
+        className: "vertical-writing",
+        id: "menu-text"
+      }, _react.default.createElement("a", {
+        href: "https://colorelephant.com/about-us/"
+      }, "ABOUT US"), _react.default.createElement("a", {
+        href: "https://colorelephant.com/services/"
+      }, "SERVICES"), _react.default.createElement("a", {
+        href: "https://colorelephant.com/why-us/"
+      }, "WHY US?"), _react.default.createElement("a", {
+        href: "https://colorelephant.com/colorelephant-promise/"
+      }, "OUR PROMISE"), _react.default.createElement("a", {
+        href: "https://colorelephant.com/blog/"
+      }, "OUR BLOG"), _react.default.createElement("a", {
+        href: "https://colorelephant.com/contact-us/"
+      }, "CONTACT US"), _react.default.createElement("a", {
+        href: "http://colorelephant.com/hiring"
+      }, "WE ARE HIRING"))), _react.default.createElement("div", {
+        className: "vertical-header"
+      }, _react.default.createElement("p", {
+        className: "vertical-writing",
+        id: "header-text"
+      }, "INTERESTED IN WORKING TOGETHER?", _react.default.createElement("span", {
+        id: "call-us"
+      }, "\xA0", _react.default.createElement("a", {
+        href: "http://colorelephant.com/contact-us/"
+      }, "GIVE US A CALL!"))), _react.default.createElement("img", {
+        id: "social",
+        src: _social_elephant.default,
+        alt: "instagram_facebook"
+      })), _react.default.createElement("div", {
+        className: "banner"
+      }, _react.default.createElement("img", {
+        id: "main-banner",
+        src: _elephant_banner.default
+      }), _react.default.createElement("p", {
+        id: "we-are"
+      }, "WE'RE IN THE BUSINESS"), _react.default.createElement("p", {
+        id: "helping"
+      }, "OF HELPING"), _react.default.createElement("p", {
+        id: "business"
+      }, "BUSINESSES"), _react.default.createElement("p", {
+        id: "we-are-colorelephant"
+      }, "We are ColorElephant"), _react.default.createElement("p", {
+        id: "digital-studio"
+      }, "A digital studio based out of Portugal working with clients globally creating"), _react.default.createElement("p", {
+        id: "technology"
+      }, "technology to support their marketing and operational efforts."), _react.default.createElement("div", {
+        id: "button1"
+      }, _react.default.createElement("a", {
+        href: "http://colorelephant.com/services/"
+      }, _react.default.createElement("span", {
+        className: "vertical-writing",
+        id: "see-what"
+      }, "SEE WHAT WE DO"))), _react.default.createElement("div", {
+        id: "button2"
+      }, _react.default.createElement("a", {
+        href: "http://colorelephant.com/about-us"
+      }, _react.default.createElement("span", {
+        className: "vertical-writing",
+        id: "about-us"
+      }, "ABOUT US")))), _react.default.createElement("div", {
+        className: "main-paragraph"
+      }, _react.default.createElement("p", {
+        id: "an-unique"
+      }, "An unique combination"), _react.default.createElement("p", {
+        id: "at-colorelephant"
+      }, "At ColorElephant we combine raw passion with talent, brains and"), _react.default.createElement("p", {
+        id: "hearts-to"
+      }, "hearts to create digital products for our clients. We are your partner"), _react.default.createElement("p", {
+        id: "if-you"
+      }, "if you want a committed team of designers, coders and project"), _react.default.createElement("p", {
+        id: "managers"
+      }, "managers to handle your next project. We build internal software"), _react.default.createElement("p", {
+        id: "CRM"
+      }, "(CRM, POS, ERP, etc), Facebook Applications, Chat Bots, software"), _react.default.createElement("p", {
+        id: "integration"
+      }, "integration (your POS and your CRM need to speak to each other,"), _react.default.createElement("p", {
+        id: "right"
+      }, "right?), online stores and more from sunny Porto, Portugal. We\u2019re"), _react.default.createElement("p", {
+        id: "creative"
+      }, "creative but also KPI-driven, we don\u2019t overcharge and we follow a"), _react.default.createElement("p", {
+        id: "series"
+      }, "series of ", _react.default.createElement("a", {
+        href: "http://colorelephant.com/colorelephant-promise/"
+      }, "principles"), " while working with anyone \u2013 want to try? ", _react.default.createElement("a", {
+        href: "http://colorelephant.com/contact-us/"
+      }, "Get in")), _react.default.createElement("p", {
+        id: "touch"
+      }, _react.default.createElement("a", {
+        href: "http://colorelephant.com/contact-us/"
+      }, "touch."))), _react.default.createElement("img", {
+        id: "office",
+        src: _office.default
+      }), _react.default.createElement("div", {
+        className: "sub-paragraph"
+      }, _react.default.createElement("p", {
+        id: "our-work"
+      }, "Our Work"), _react.default.createElement("p", {
+        id: "we-have"
+      }, "We have been fortunate enough to work with these fine brands below and many more. We work with them to create compelling digital"), _react.default.createElement("p", {
+        id: "products"
+      }, "products to support their marketing and their operational goals. If you\u2019d like to know more about what\u2019ve done and how e can help you"), _react.default.createElement("p", {
+        id: "please"
+      }, "please get in touch.")), _react.default.createElement("div", {
+        id: "screenshot"
+      }, _react.default.createElement("h2", null, "Screenshot!"), _react.default.createElement("img", {
+        src: _colorelephant.default
+      }))));
+    }
+  }]);
+
+  return Elephant;
+}(_react.Component);
+
+exports.default = Elephant;
+},{"react":"../node_modules/react/index.js","../assets/social_elephant.png":"assets/social_elephant.png","../assets/logoElephant.png":"assets/logoElephant.png","../assets/elephant_banner.gif":"assets/elephant_banner.gif","../assets/office.jpg":"assets/office.jpg","../assets/colorelephant.png":"assets/colorelephant.png"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -34989,6 +35181,8 @@ var _Crometrics = _interopRequireDefault(require("./components/Crometrics"));
 
 var _Header = _interopRequireDefault(require("./components/Header"));
 
+var _Elephant = _interopRequireDefault(require("./components/Elephant"));
+
 require("./index.css");
 
 var _musicGuru = _interopRequireDefault(require("./projects/music-guru"));
@@ -35040,6 +35234,11 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
   render: function render() {
     return _react.default.createElement(_Crometrics.default, null);
   }
+}), _react.default.createElement(_reactRouterDom.Route, {
+  path: "/colorelephant",
+  render: function render() {
+    return _react.default.createElement(_Header.default, null, _react.default.createElement(_Elephant.default, null));
+  }
 }))), document.getElementById('root')); //Promises
 // new Promise((resolve, reject) => {
 //     return reject(new Error('No Bear'));
@@ -35051,7 +35250,7 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
 //     console.log(quote)
 // })
 // .catch(error => console.log('error', error));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/esm/history.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./components/Interview":"components/Interview.js","./components/Crometrics":"components/Crometrics.js","./components/Header":"components/Header.js","./index.css":"index.css","./projects/music-guru":"projects/music-guru/index.js","./projects/even-or-odds":"projects/even-or-odds/index.js","./projects/reaction":"projects/reaction/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/esm/history.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./components/Interview":"components/Interview.js","./components/Crometrics":"components/Crometrics.js","./components/Header":"components/Header.js","./components/Elephant":"components/Elephant.js","./index.css":"index.css","./projects/music-guru":"projects/music-guru/index.js","./projects/even-or-odds":"projects/even-or-odds/index.js","./projects/reaction":"projects/reaction/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -35079,7 +35278,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55680" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

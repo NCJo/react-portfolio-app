@@ -8,6 +8,7 @@ import Jokes from './components/Jokes';
 import Interview from './components/Interview';
 import Crometrics from './components/Crometrics';
 import Header from './components/Header';
+import Elephant from './components/Elephant';
 import './index.css';
 
 import MusicGuru from './projects/music-guru';
@@ -30,6 +31,7 @@ ReactDOM.render(
             {/* <Route path='/interview' render={() => <Header><Interview /></Header>} /> */}
             <Route path='/interview' render={() => <Interview />} />
             <Route path='/sample' render={() => <Crometrics />} />
+            <Route path='/colorelephant' render={()=> <Header><Elephant /></Header>} />
 
 
         </Switch>

@@ -16,6 +16,7 @@ body {
     padding: 2.5%;
     font-family: 'RobotoCondensed';
     color: #d6fff6;
+    text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -94,6 +95,335 @@ h1, h2, h3, h4, h5 {
     from {opacity: 0}
     to {opacity: 100}
 }
+
+
+/* Reserved for elephantcolor page */
+.vertical-writing {
+    writing-mode: vertical-rl;
+    /* writing-mode: tb; */
+
+}
+
+.white-bg {
+    display: inline-block;
+    width: 875px;
+    height: 768px;
+    background: #ffffff;
+}
+
+/* TITLE SECTION */
+.vertical-title {
+    position: relative;    
+    left: 785px;
+    width: 68px;
+    height: 768px;
+    background: white;
+}
+
+#logo-elephant {
+    position: relative;
+    transform: rotate(90deg);
+    height: 41px;
+    width: 171px;
+    top: 77px;
+    left: -50px;
+}
+
+#menu-text > a {
+    position: relative;
+    text-decoration: none!important;
+    color: black;
+    font-size: 9px;
+    margin-bottom: 7.5px;
+    /* letter-spacing: 0.1px; */
+    font-weight: bolder;
+    font-family: Arial;
+    left: 5px;
+    top: 290px;
+    color: #999999;
+}
+/* END OF TITLE SECTION */
+
+/* VERTICAL HEADER SECTION */
+.vertical-header {
+    position: relative;
+    bottom: 768px;
+    left: 853px;
+    width: 23px;
+    height: 768px;
+    background: #de8014;
+}
+
+#social {
+    position: relative;
+    top: 424px;
+}
+
+#call-us {
+    color: #5c554d;
+}
+
+#header-text {
+    position: relative;
+    left: -4px;
+    top: 10px;
+    font-size: 9px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: Verdana;
+}
+/* END OF VERTICAL HEADER SECTION */
+
+/* BANNER SECTION */
+#main-banner {
+    position: relative;
+    left: 160px;
+    top: -1340px;
+    width: 768px;
+    height: 376px;
+    transform: rotate(90deg);
+}
+
+.banner > p {
+    position: relative;
+    bottom: 1876px;
+    left: 632px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    writing-mode: vertical-rl;
+}
+
+#we-are {
+    position: relative;
+    bottom: 1876px;
+    left: 632px;
+}
+
+#helping {
+    position: relative;
+    bottom: 2331px;
+    left: 595px;
+}
+
+#business {
+    position: relative;
+    bottom: 2567px;
+    left: 560px;
+}
+
+#we-are-colorelephant {
+    position: relative;
+    bottom: 2812px;
+    left: 547px;
+    font-size: 24px !important;
+}
+
+#digital-studio {
+    position: relative;
+    bottom: 3078px;
+    left: 533px;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+#technology {
+    position: relative;
+    bottom: 3522px;
+    left: 517px;
+    font-size: 12px !important;
+}
+
+#button1 {
+    position: relative;
+    bottom: 3894px;
+    left: 482px;
+    width: 30px;
+    height: 131px;
+    background: #de8014;
+}
+
+#see-what {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px !important;
+    color: #fff !important;
+    margin-top: 14px;
+}
+
+#button2 {
+    position: relative;
+    bottom: 3880px;
+    left: 482px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f0f0f0 !important;
+    /* border: #d6fff6; */
+    width: 30px;
+    height: 89px;
+}
+
+#about-us {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px !important;
+    color: #f0f0f0 !important;
+    margin-top: 14px;
+}
+/* END OF BANNER SECTION */
+
+/* MAIN PARAGRAPH SECTION */
+.main-paragraph > p {
+    position: relative;
+    color: #6e6e6e;
+    text-align: left !important;
+    left: 200px;
+    bottom: 3000px;
+    writing-mode: vertical-rl;
+
+}
+
+#an-unique {
+    position: relative;
+    font-weight: bold !important;
+    font-family: sans-serif;
+    font-size: 14px !important;
+    bottom: 4140px;
+    left: 351px;
+}
+
+#at-colorelephant {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 4311px;
+    left: 326px;
+}
+
+#hearts-to {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 4652px;
+    left: 308px;
+}
+
+#if-you {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 5007px;
+    left: 288px;
+}
+
+#managers {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 5337px;
+    left: 269px;
+}
+
+#CRM {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 5677px;
+    left: 250px;
+}
+
+#integration {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 6020px;
+    left: 232px;
+}
+
+#right {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 6360px;
+    left: 212px;
+}
+
+#creative {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 6700px;
+    left: 194px;
+}
+
+#series {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 7041px;
+    left: 176px;
+}
+
+#touch {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 7391px;
+    left: 158px;
+}
+
+#office {
+    position: relative;
+    left: -164px;
+    top: -6993px;
+    width: 363px;
+    height: 229px;
+    transform: rotate(90deg);
+}
+/* END OF MAIN PARAGRAPH SECTION */
+
+/* SUB PARAGRAPH SECTION */
+.sub-paragraph > p {
+    position: relative;
+    color: #6e6e6e;
+    text-align: left !important;
+    left: 200px;
+    bottom: 3000px;
+    writing-mode: vertical-rl;
+}
+
+#our-work {
+    position: relative;
+    font-weight: bold !important;
+    font-family: sans-serif;
+    font-size: 14px !important;
+    bottom: 7670px;
+    left: 70px;
+}
+
+#we-have {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 7748px;
+    left: 44px;
+}
+
+#products {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 8432px;
+    left: 25px;
+}
+
+#please {
+    position: relative;
+    font-size: 13px !important;
+    bottom: 9119px;
+    left: 7px;
+}
+/* END OF SUB PARAGRAPH SECTION */
+
+#screenshot {
+    position: relative;
+    bottom: 8430px;
+}
+
+/* END OF ELEPHANTCOLOR PAGE */
+
+
+
+
 
 
 @font-face {
