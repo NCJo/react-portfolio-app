@@ -30724,7 +30724,11 @@ function (_Component) {
   _createClass(Elephant, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Just like the website! (with a bit of tilt)"), _react.default.createElement("h5", null, "go ahead, click any link"), _react.default.createElement("div", {
+      return _react.default.createElement("div", null, _react.default.createElement("h5", null, "This silly mini-project was written in React + Webpack + Babel"), _react.default.createElement("h5", null, "You can check the source code in my ", _react.default.createElement("a", {
+        href: "https://github.com/NCJo/react-portfolio-app/blob/master/src/components/Elephant.js"
+      }, "github"), "."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h2", {
+        className: "pretty-pink"
+      }, "Your (90\xB0 tilted) Front Page!"), _react.default.createElement("h5", null, "(Every links on the page is working! go ahead, click on it.)"), _react.default.createElement("div", {
         className: "white-bg"
       }, _react.default.createElement("div", {
         className: "vertical-title"
@@ -30840,9 +30844,13 @@ function (_Component) {
         id: "please"
       }, "please get in touch.")), _react.default.createElement("div", {
         id: "screenshot"
-      }, _react.default.createElement("h2", null, "Screenshot!"), _react.default.createElement("img", {
+      }, _react.default.createElement("h2", {
+        className: "pretty-pink"
+      }, "The actual screenshot!"), _react.default.createElement("img", {
         src: _colorelephant.default
-      }))));
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h3", {
+        className: "pretty-pink"
+      }, "Thank you for checking out this silliness. Here is a doughnut. \uD83C\uDF69"))));
     }
   }]);
 
@@ -35278,7 +35286,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49553" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60915" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

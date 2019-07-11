@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5 {
     font-family: 'EconomicaBold';
 }
 
+.pretty-pink {
+    color: #ff8484;
+    text-decoration: underline !important;
+}
+
 .myButton {
 	-moz-box-shadow: 2px 3px 0px 0px #a8453e;
 	-webkit-box-shadow: 2px 3px 0px 0px #a8453e;
@@ -95,6 +100,7 @@ h1, h2, h3, h4, h5 {
     from {opacity: 0}
     to {opacity: 100}
 }
+
 
 
 /* Reserved for elephantcolor page */

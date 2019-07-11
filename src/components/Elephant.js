@@ -11,8 +11,12 @@ export default class Elephant extends Component {
 
         return (
             <div>
-            <h2>Just like the website! (with a bit of tilt)</h2>
-            <h5>go ahead, click any link</h5>
+            <h5>This silly mini-project was written in React + Webpack + Babel</h5>
+            <h5>You can check the source code in my <a href='https://github.com/NCJo/react-portfolio-app/blob/master/src/components/Elephant.js'>github</a>.</h5>
+            <br />
+            <br />
+            <h2 className='pretty-pink'>Your (90° tilted) Front Page!</h2>
+            <h5>(Every links on the page is working! go ahead, click on it.)</h5>
             <div className='white-bg'>
                 <div className='vertical-title'>
                     <a href='https://colorelephant.com/'><img id='logo-elephant' src={logo} alt='logo'/></a>
@@ -65,8 +69,11 @@ export default class Elephant extends Component {
                     <p id='please'>please get in touch.</p>
                 </div>
                 <div id='screenshot'>
-                <h2>Screenshot!</h2>
+                <h2 className='pretty-pink'>The actual screenshot!</h2>
                 <img src={colorelephant} />
+                <br/>
+                <br/>
+                <h3 className='pretty-pink'>Thank you for checking out this silliness. Here is a doughnut. 🍩</h3>
             </div>
             </div>
             
