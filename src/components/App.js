@@ -31,7 +31,7 @@ class App extends Component {
                 <p>I'm Jed — working remotely on projects for clients all over the world.</p>
                 {/* {this.state.displayBio ? <Title /> : null } */}
                 <Title />
-                <p>I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Express.</p>
+                <p>I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Vue.</p>
                 {
                     this.state.displayBio ? (
                         <div>
