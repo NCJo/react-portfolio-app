@@ -57,6 +57,7 @@ class App extends Component {
                 <hr />
                 <ChatBot />
                 <hr />
+                <hr />
                 <SocialProfiles />
                 
             </div>

@@ -7,7 +7,7 @@ class SocialProfile extends Component {
         return (
             <span>
                 <a href={link}>
-                <img src={image} style={{ width: 35, height: 35, margin: 10}} /></a>
+                <img src={image} style={{ width: 40, height: 40, margin: 10}} /></a>
             </span>
         )
     }

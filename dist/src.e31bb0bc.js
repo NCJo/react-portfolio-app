@@ -29869,14 +29869,14 @@ var Projects = function Projects() {
 
 var _default = Projects;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../data/projects":"data/projects.js"}],"assets/github_icon.png":[function(require,module,exports) {
-module.exports = "/github_icon.2b0f71f9.png";
-},{}],"assets/email_icon.png":[function(require,module,exports) {
-module.exports = "/email_icon.d6c23642.png";
+},{"react":"../node_modules/react/index.js","../data/projects":"data/projects.js"}],"assets/github_icon2.png":[function(require,module,exports) {
+module.exports = "/github_icon2.bc28a0ba.png";
+},{}],"assets/email_icon2.png":[function(require,module,exports) {
+module.exports = "/email_icon2.3c9a97df.png";
 },{}],"assets/twitter_icon.png":[function(require,module,exports) {
 module.exports = "/twitter_icon.38592594.png";
-},{}],"assets/linkedin_icon.png":[function(require,module,exports) {
-module.exports = "/linkedin_icon.32d4c8f5.png";
+},{}],"assets/linkedin_icon2.png":[function(require,module,exports) {
+module.exports = "/linkedin_icon2.e395b9ce.png";
 },{}],"data/socialProfiles.js":[function(require,module,exports) {
 "use strict";
 
@@ -29885,13 +29885,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _github_icon = _interopRequireDefault(require("../assets/github_icon.png"));
+var _github_icon = _interopRequireDefault(require("../assets/github_icon2.png"));
 
-var _email_icon = _interopRequireDefault(require("../assets/email_icon.png"));
+var _email_icon = _interopRequireDefault(require("../assets/email_icon2.png"));
 
 var _twitter_icon = _interopRequireDefault(require("../assets/twitter_icon.png"));
 
-var _linkedin_icon = _interopRequireDefault(require("../assets/linkedin_icon.png"));
+var _linkedin_icon = _interopRequireDefault(require("../assets/linkedin_icon2.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29906,15 +29906,16 @@ var SOCIAL_PROFILES = [{
 }, {
   id: 3,
   link: 'https://www.linkedin.com/in/cjnimkulrat/',
-  image: _linkedin_icon.default
-}, {
-  id: 4,
-  link: 'tweet tweet',
-  image: _twitter_icon.default
+  image: _linkedin_icon.default //     {
+  //         id: 4,
+  //         link: 'tweet tweet',
+  //         image: twitterIcon
+  //     }
+
 }];
 var _default = SOCIAL_PROFILES;
 exports.default = _default;
-},{"../assets/github_icon.png":"assets/github_icon.png","../assets/email_icon.png":"assets/email_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
+},{"../assets/github_icon2.png":"assets/github_icon2.png","../assets/email_icon2.png":"assets/email_icon2.png","../assets/twitter_icon.png":"assets/twitter_icon.png","../assets/linkedin_icon2.png":"assets/linkedin_icon2.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29970,8 +29971,8 @@ function (_Component) {
       }, _react.default.createElement("img", {
         src: image,
         style: {
-          width: 35,
-          height: 35,
+          width: 40,
+          height: 40,
           margin: 10
         }
       })));
@@ -30297,13 +30298,13 @@ function (_Component) {
       return _react.default.createElement("div", null, _react.default.createElement("img", {
         src: _profile.default,
         className: "profile"
-      }), _react.default.createElement("h1", null, "Hi!"), _react.default.createElement("p", null, "I'm Jed \u2014 working remotely on projects for clients all over the world."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Express."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm a freelancer based in Cary and Denver."), _react.default.createElement("p", null, "Python is love, javascript is life."), _react.default.createElement("p", null, "A skateboard Enthusiast."), _react.default.createElement("button", {
+      }), _react.default.createElement("h1", null, "Hi!"), _react.default.createElement("p", null, "I'm Jed \u2014 working remotely on projects for clients all over the world."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I have a diverge set of skills, ranging from Python, to Django, all the way to React + Redux and Vue."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm a freelancer based in Cary and Denver."), _react.default.createElement("p", null, "Python is love, javascript is life."), _react.default.createElement("p", null, "A skateboard Enthusiast."), _react.default.createElement("button", {
         class: "myButton",
         onClick: this.toggleDisplayBio
       }, "Show Less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
         class: "myButton",
         onClick: this.toggleDisplayBio
-      }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_ChatBot.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
+      }, "Read More")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_ChatBot.default, null), _react.default.createElement("hr", null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
     }
   }]);
 
@@ -35286,7 +35287,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60084" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
